@@ -3,8 +3,12 @@
   "version": "1.0",
   "manifest_version": 2,
   "description": "Parse the current tab uri and present its hostname for copy in clipboard.",
-  "browser_action": {
+  "page_action": {
+    "default_icon": "link.png",
     "default_popup": "popup.html"
+  },
+   "background": {
+     "scripts": ["background.js"]
   },
   "permissions": [
     "tabs"
